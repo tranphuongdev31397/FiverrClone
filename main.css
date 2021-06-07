@@ -1,0 +1,394 @@
+*{  
+    overflow-x: hidden;
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+html, body{
+    font: Macan,Helvetica Neue,Helvetica,Arial,sans-serif;
+    
+}
+.container{
+    max-width: 95%;
+}
+@media screen and (max-width:768px){
+    .container{
+        max-width: 90%;
+    }
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    font-size: 60px;
+}
+/* Header */
+.header_all{
+    display: flex;
+    justify-content:space-between;
+}
+.header_two{
+    gap: 65px;
+    display: flex;
+    justify-content: center;
+    padding: 30px 65px;
+}
+.write{
+    display: flex;
+    justify-content: center;
+}
+ 
+
+.W_title{
+    font-weight: 900;
+    font-size: 900;
+    overflow-y: hidden;
+}
+.place{
+    margin: 22px 0;
+    background-color: #20bc73;
+    border-radius: 50%;
+    height: 7px;
+    width: 7px;
+}
+.make{
+    margin: 5px 0;
+}
+.m_stick button{
+    margin: 0 -5px;
+    font-weight: 700;
+    width: 30px;
+    background-color: #20bc73;
+    color: #fff;
+    width: 81px;
+    border: none;
+    height: 35px;
+    border-radius: 0px 4px 4px 0px;
+}
+.m_stick button:hover{
+    background-color: #19a463;
+}
+.m_stick input{
+    height: 35px;
+    width: 225px;
+    font-size: 16px;
+    
+    border: solid 1px #dadbdd;
+    padding: 7px 7px 7px 28px;
+    border-radius: 3px;
+    border-color: #dadbdd;
+    
+    box-shadow: none;
+    z-index: 3 ;
+}
+.m_stick i{
+    position: absolute;
+    
+    margin: 10px 10px;
+    color: #62646a;
+}
+/* HEADER LINK */
+.link{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    gap: 40px;
+    font-weight: 700;
+    color: #7a7d85
+}
+
+.linkMany a{
+    
+    color: #7a7d85;
+}
+.linkMany a:hover{
+    text-decoration: auto;
+    color: #19a463;
+}
+.a1 a{
+    color: #28ccb7;
+}
+.a1 a:hover{
+    color: #02c2a9;
+    text-decoration: auto;
+}
+
+.linkMany:hover .a, .linkMany:hover i {
+    color: #19a463;
+    /* đưa chuột vô cả 2 cùng chuyển màu */
+  }
+
+.linkMany button{
+    font-weight: 700;
+    color: #20bc73;
+    background: #fff;
+    border: solid 1px #20bc73;
+    height: 35px;
+    width: 60px;
+    border-radius: 4px;
+}
+.linkMany button:hover{
+    color:white;
+    background-color: #19a463;
+}
+.navbar{
+    display: none;
+}
+@media screen and (max-width:768px) {
+    .write{
+        margin: 0 100px;
+    }
+    .header_all .link{
+        display:none;
+    }
+    .navbar{
+        display: block;
+    }
+}
+/* CAROUSEL */
+
+/* Carousel Hero_text */
+
+.hero_text {
+    position: absolute;
+    transform: translate(80%, -500%);
+    text-align: center;
+    color: #fff;  
+    display:inline-block;
+}
+.hero_text h1{
+    overflow-y: hidden;
+}
+.hero_text p{
+    font-size: 30px;
+}
+.clickHero{
+    border: solid 1px #3fca89;
+    background-color: #1dbf73;
+    width: 180px;
+    height: 55px;
+    border-radius: 6px 
+}
+.clickHero:hover{
+    background-color: #3fca89;
+}
+.clickHero a{
+    color: #fff;
+}
+.clickHero a:hover{
+    
+    text-decoration: auto;
+}
+/* CAROUSEL HERO_START*/
+
+.cf{
+        background: rgba(255,255,255,.3);
+        color: #fff;
+        display: flex;
+        position: absolute;
+        transform: translateY(-100%);
+        text-align: center;
+}
+.cf li{
+
+    text-align: center;
+    padding: 35px 162px 35px;
+    font-size: 19px;
+    font-weight: 400;
+}
+
+.cf strong{
+    font-size: 45px;
+    font-weight: 400;   
+}
+.cf li strong{
+    text-align: center;
+}
+/* EDUCATION WRITE */
+.educationWrite p{
+    display:flex;
+    justify-content: center;
+    font-size: 40px;
+    font-weight: 600;
+}
+/* ContainerImg */
+
+.containerImg {
+    display: flex;
+    max-width: 1280px;
+    margin: 0 auto;
+    gap: 15px;
+    
+    
+    
+}
+
+
+.item {
+    overflow-y: hidden;
+    width: 25%;
+    position: relative;
+}
+
+.item:hover .overlay {
+    opacity: 0;
+}
+
+.overlay{
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    transition: all .3s;
+    background-color: rgba(0,0,0, 0.5);
+    transform: 2s;
+}
+
+.text {
+    position: absolute;
+    top: 60%;
+    left: 10%;
+}
+
+.text p {
+    color: #fff;
+    font-size: 25px;
+    font-weight: 900;
+    position: relative;
+}
+
+.img img {
+    height: 325px;
+    width: 100%;
+    overflow: hidden;
+}
+/* 4 hình dưới */
+.containerImg2 {
+    display: flex;
+    max-width: 1280px;
+    margin: 15px auto;
+    gap: 15px;    
+}
+.end i{
+    color: red;
+    height: 20px;
+    width: 20px;
+}
+.end {
+    padding: 55px 0;
+    text-align: center;
+    
+}
+
+.end p{
+    font-size: 40px;
+    
+}
+.end button{
+    background-color: #1dbf73;
+    height: 50px;
+    width: 180px;
+    border-radius: 5px ;
+    border: solid 1px #20bc73;
+    
+}
+.end button:hover{
+    background-color: #3fca89;
+    
+}
+.end button a{
+    color: #fff;
+    font-size: 15px;
+    font-weight: 900;
+    text-decoration: auto;
+}
+/* EDUCATION */
+.education{
+    background-color: #f7f7f7;
+}
+.educationEasy{
+    justify-content: space-evenly;
+    display: flex;
+   text-align: center;
+}
+.educationTitle p{
+    font-weight: 500;
+    font-size: 45px;
+    text-align: center;
+    margin-top: 35px;
+}
+.educationIntro1 h3{
+    font-size: 30px;
+    font-weight: 700;
+    overflow: hidden;
+}
+li .educationIntro1  i{
+    list-style-type: none;
+}
+/* START  */
+.start{
+    max-width: 1240px;
+    background-color: #f7f7f7;
+    margin: 75px;
+    display: flex;
+    justify-content: space-evenly;
+    max-height: 406px;
+    
+}
+.startOne h2{
+    margin-top: 20px;
+    overflow-y: hidden;
+    font-size: 30px;
+    font-weight: 700;
+}
+.startOne p{
+    font-size: 20px;
+}
+.startOne button{
+   
+    background-color:#20bc73 ;
+    border: solid 1px #20bc73;
+    height: 52px;
+    width: 190px;
+    border-radius: 5px;
+}
+.startOne a{
+    
+    text-decoration: auto;
+    color: #fff;
+}
+
+.startOne {
+    margin: 60px;
+}
+
+.startTwo{
+     overflow-y: hidden; 
+}
+.startTwo video{
+    right: 75px;
+    width: auto;
+    opacity: 0;
+    position: relative;
+    height: 270px;
+}
+.startTwo h2{
+    overflow-y: hidden;
+    font-size: 20px;
+    font-weight: 700;
+}
+.space{
+    border-radius: 50%;
+    
+}
+.space i{
+    position: absolute;
+}
+/* BUYER */
+
+.buyer{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+}
